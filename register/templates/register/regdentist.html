@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+
+{% block title %}Create an Account{% endblock %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+    <form method="POST" class="form-group">
+	{% csrf_token %}
+	{% comment %} {{ form|crispy }}
+	{{ profile_form|crispy}} {% endcomment %}
+  <br></br>
+  <br></br>
+  <br></br>
+  <div class="container">
+    <div class="form-row">
+      <div class="form-group col-md-6 mb-0">
+        {{ form.username|as_crispy_field }}
+      </div>
+      <div class="form-group col-md-6 mb-0">
+        {{ profile_form.country|as_crispy_field }}
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6 mb-0">
+        {{ form.email|as_crispy_field }}
+      </div>
+      <div class="form-group col-md-6 mb-0">
+        {{ profile_form.occupation|as_crispy_field }}
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6 mb-0">
+        {{ form.first_name|as_crispy_field }}
+      </div>
+      <div class="form-group col-md-6 mb-0">
+        {{ profile_form.usedios|as_crispy_field }}
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6 mb-0">
+        {{ form.last_name|as_crispy_field }}
+      </div>
+      <div class="form-group col-md-6 mb-0">
+        {{ profile_form.interest|as_crispy_field }}
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6 mb-0">
+        {{ form.password1|as_crispy_field }}
+      </div>
+      <div class="form-group col-md-6 mb-0">
+        {{ profile_form.dentistage|as_crispy_field }}
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6 mb-0">
+        {{ form.password2|as_crispy_field }}
+      </div>
+      <div class="form-group col-md-6 mb-0">
+        {{ profile_form.hasclinic|as_crispy_field }}
+      </div>
+    </div>
+
+	<button type="submit" class="btn btn-info">Register</button>
+	<button type="submit" class="btn btn-secondary" formnovalidate formaction= "{% url 'index' %}" >Cancel</button>
+  </div>
+	</form>
+{% endblock %}

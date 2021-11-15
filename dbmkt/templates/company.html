@@ -1,0 +1,115 @@
+{% load static %}
+
+
+
+<section class="company-section" id="company">
+
+<br></br>
+    <div class="row align-items-center no-gutters bg-light mb-4 mb-lg-5">
+        <div class ="col-xl-2 col-lg-1"></div>
+        <div class="col-xl-4 col-lg-6"><img class="img-fluid mb-3 mb-lg-0" src="{% static "assets/DW-pics/team/team-board1.png" %}" alt="" /></div>
+        <div class="col-xl-4 col-lg-5">
+            <div class="featured-text text-center text-lg-left">
+                <style>
+                </style>
+                    <div class="entry-content">
+                    <h4 class ="text-info">Team</h4>
+                        <ul >
+                            <li >Strong team with a versatile background</li>
+                            <li>Strong technical roots in imaging</li>
+                            <li>Allied with institutes at DTU for enhancing our 3D imaging and Neural Net know how</li>
+                            <li>Experienced marketing and Business Development ressource</li>
+                            <li>Industry focused advisory board and board</li>
+                        </ul>
+                    </div>
+                {% comment %} <h4>Technology</h4>
+                <p class="text-black-50 mb-0">Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!</p> {% endcomment %}
+            </div>
+        </div>
+        <div class ="col-xl-2 col-lg-2"></div>
+
+    </div>
+
+     <div class="row align-items-center no-gutters mb-4 mb-lg-5" id="location">
+        <div class ="col-xl-2 col-lg-1"></div>
+        <div class="col-xl-4 col-lg-5">
+            <div class="featured-text text-center text-lg-left">
+                    <div class="entry-content">
+                    <h4 class ="text-info">Location:</h4>
+                        <ul >
+                            <li>DanBots is located in FutureBox, a DTU based hardware incubator!</li>
+                            <li>DanBots benefits immensly from the collegial environment between the FB based startups!</li>
+                            <li>The common lab facilities make it affordable and possible to be a startup on a shoe string</li>
+                            <li>Help among the startups staff is the rule and not the exception </li>
+                            <li>FutureBox staff and there networking efforts are a valuable asset for the resident startups! </li>
+                        </ul>
+                    </div>
+                {% comment %} <h4>Technology</h4>
+                <p class="text-black-50 mb-0">Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!</p> {% endcomment %}
+            </div>
+        </div>
+        <div class="col-xl-5 col-lg-6"><img class="img-fluid mb-3 mb-lg-0" src="{% static "assets/DW-pics/fbox/fb5.png" %}" alt="" />
+        </div>
+    </div>
+
+
+    {% comment %} <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-lg-8 mx-auto text-center">
+                <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
+                <h2 class="text-white mb-5">Subscribe to receive updates!</h2>
+                <form class="form-inline d-flex">
+                    <input class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" type="email" placeholder="Enter email address..." />
+                    <button class="btn btn-primary mx-auto" type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </div> {% endcomment %}
+</section>
+<!-- Contact-->
+<section class="contact-section bg-black" id="contact">
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-3 mb-md-0">
+                <div class="card py-4 h-100">
+                    <div class="card-body text-center">
+                        <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+                        <h4 class="text-uppercase m-0">Address</h4>
+                        <hr class="my-4" />
+                        <div class="small text-black-50">Elektrovej  331, 2800 Lygby</div>
+                        <div class="small text-black-50"> Copenhagen Denmark</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3 mb-md-0">
+                <div class="card py-4 h-100">
+                    <div class="card-body text-center">
+                        <i class="fas fa-envelope text-primary mb-2"></i>
+                        <h4 class="text-uppercase m-0">Email</h4>
+                        <hr class="my-4" />
+                        <div class="small text-black-50"><a  href="{% url 'sendit' %}">General: info@danbots.com</a></div>
+                        <div class="small text-black-50"><a href="#!">Dentists: dentists@danbots.com</a></div>
+                        <div class="small text-black-50"><a href="#!">Investors: investor@danbots.com</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3 mb-md-0">
+                <div class="card py-4 h-100">
+                    <div class="card-body text-center">
+                        <i class="fas fa-mobile-alt text-primary mb-2"></i>
+                        <h4 class="text-uppercase m-0">Phone</h4>
+                        <hr class="my-4" />
+                        <div class="small text-black-50">+45 41817178</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="social d-flex justify-content-center">
+            <a class="mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+            <a class="mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+            <a class="mx-2" href="#!"><i class="fab fa-github"></i></a>
+        </div>
+    </div>
+</section>

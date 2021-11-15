@@ -1,0 +1,9 @@
+wheel
+django >= 3
+django-bootstrap-themes 
+django-bootstrap4
+django-countries 
+django-crispy-forms 
+django-registration 
+django-bootstrap-modal-forms
+bootstrap4
