@@ -2,5 +2,8 @@
 
 Requirements:
 
+install
+
 apache2
-apt-get install libapache2-mod-wsgi-py3
+libapache2-mod-wsgi-py3
+python3.8-venv
